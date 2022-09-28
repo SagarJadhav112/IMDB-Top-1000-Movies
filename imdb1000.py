@@ -20,7 +20,6 @@ time=[]
 rating=[]
 votes = []
 gross = []
-description = []
 
 pages = np.arange(1,1000,100)
 for page in pages:
