@@ -28,7 +28,7 @@ for page in pages:
     movie_data = soup.findAll('div', attrs = {'class': 'lister-item mode-advanced'})
     sleep(randint(3,7))
     for i in movie_data:
-        name = store.h3.a.text
+        name = i.h3.a.text
         movie.append(name)
         
         year_of_release = i.h3.find('span', class_ = "lister-item-year text-muted unbold").text
